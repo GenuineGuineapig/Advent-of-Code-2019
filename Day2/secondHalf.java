@@ -11,13 +11,8 @@ public class secondHalf {
     public static void main(String[] args) {
         int noun = 0;
         int verb = 0;
-        int res = 0;
+
         while (new IntCode(ints, noun, verb).getResult() != goal) {
-            // I feel like I'm stupid because I can't figure out at the moment *why* the while still enters this block
-            // when it should actually be false.
-            if(new IntCode(ints, noun, verb).getResult() == goal) {
-                break;
-            }
             if (verb < 99) {
                 verb++;
             } else {

@@ -5,8 +5,8 @@ class IntCode {
 
     IntCode(int[] register, int noun, int verb) {
         this.register = register.clone();
-        register[1] = noun;
-        register[2] = verb;
+        this.register[1] = noun;
+        this.register[2] = verb;
 
         calculate();
     }
