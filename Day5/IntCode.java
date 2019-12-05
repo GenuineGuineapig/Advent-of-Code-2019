@@ -128,7 +128,7 @@ class IntCode {
             case SAVE:
                 Scanner sc = new Scanner(System.in);
                 System.out.println("Please enter input:");
-                save(5, loadParam(1, this.instPtr + 1));
+                save(5, loadParam(sc.nextInt(), this.instPtr + 1));
                 break;
             case OUT:
                 output(this.register[this.instPtr + 1]);
